@@ -1,7 +1,7 @@
 /* Clase 5 - CSS externo */
 
 body{
-font-family: Arial, sans-serif;
+font-family: 'Lucida Sans Unicode',Arial, sans-serif;
 font-size:18px;
 line-height:1.6;
 font-weight:400;
@@ -85,4 +85,36 @@ footer{
 margin-top:50px;
 text-align:center;
 font-size:14px;
+}
+
+/* Clase 7 y 8 - Maquetacion y Flexbox */
+
+header,nav,section,aside,footer{
+padding:20px;
+margin:10px;
+border-radius:10px;
+background:rgba(255,255,255,.20);
+backdrop-filter:blur(2px);
+}
+
+.contenedor{
+display:flex;
+gap:20px;
+align-items:flex-start;
+}
+
+section{
+flex:3;
+}
+
+aside{
+flex:1;
+}
+
+@media(max-width:800px){
+
+.contenedor{
+flex-direction:column;
+}
+
 }
